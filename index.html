@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculadora de Compra ou Locação de Veículos</title>
+   <link rel="shortcut icon" href="calculadora.png" type="image/png">
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js" defer></script>
+</head>
+
+<body>
+
+   <form class="calculadora" id="calculadora">
+      <header>
+         <img src="calculadora.png">
+         <h2>Calculadora de Compra ou Locação de Veículos</h2>
+      </header>
+      <main>
+         <div>
+            <label>Valor do Veículo</label>
+            <input name="valorDoVeículo" id="valorDoVeículo" type="text">
+         </div>
+         <div>
+            <label>Valor de entrada</label>
+            <input name="valorDeEntrada" id="valorDeEntrada" type="text">
+         </div>
+         <label>Número de parcelas (meses)</label>
+         <input name="numeroDeParcelas" type="number" value="60">
+         <div>
+            <label>Taxa de juros (%)</label>
+            <input name="taxaDeJuros" type="number" step="any" value="1">
+         </div>
+         <div>
+            <label>Valor financiado</label>
+            <div class="valor-financiado" id="valor-financiado">R$ 0.00</div>
+         </div>
+      </main>
+      <button>Calcular parcela</button>
+      <div>
+         <label>Valor da parcela Finaciamento</label>
+         <div class="valor-parcela-financiamento"> 2725.00</div>
+      </div>
+      <div>
+         <label>Valor Aluguel</label>
+         <div class="valor-aluguel">70000.00</div>
+      </div>
+      </main>
+      <button>Calcular parcela</button>
+      <div>
+         <label>Valor da parcela do Aluguel</label>
+         <div class="valor-parcela-aluguel"> 1725.00</div>
+   </form>
+
+</body>
+
+</html>
